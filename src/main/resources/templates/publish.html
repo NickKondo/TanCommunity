@@ -13,7 +13,7 @@
 
 
 <body>
-<nav class="navbar navbar-default">
+<div class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -64,67 +64,43 @@
             </ul>
         </div>
     </div>
-    <div class="container-fluid main">
-        <div class="row">
-            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" style="background-color: white;height:300px">
-                <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
-                <hr>
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img >
-                        </a>
-                    </div>
-                </div>
 
+
+    < class="container-fluid main">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发现</h2>
+                <hr>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="">
+                    </a>
+            </div>
                 <form action="">
                     <div class="form-group">
-                        <label for="title">问题标题(简单扼要) :</label>
-                        <input type="text" class="form-control" id="title" name="title" placeholder="问题标题.....">
+                        <label for="title">问题标题(简单扼要):</label>
+                        <input type="text" class="form-control" id="title" placeholder="问题标题......">
                     </div>
-
+                </form>
                     <div class="form-group">
-                        <label for="title">问题补充(必填，请参照右侧提示) :</label>
-                        <textarea name="description" id="description" class="form-control" cols="30"
-                                  rows="10"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="title">添加标签 :</label>
-                        <input type="text" class="form-control" id="tag" name="tag" placeholder="输入标签，以，号分隔">
+                        <label for="title">问题补充(必填，参考右侧提示):</label>
+                        <textarea name="" id="description" class="form-control" cols="30" rows="10"></textarea>
                     </div>
 
-                    <div class="container-fluid main">
-                        <div class="row">
-                            <div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12"
-                                 th:text="${error}"></div>
-                            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12"></div>
-                            <button type="submit"
-                                    class="btn btn-success btn-publish ">
-                                发布
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="alert-danger" th:text="${error}"></div>
-                    
-                    <button type="submit" class="btn btn-success">发布</button>
+                <button type="submit" class="btn btn-success btn-publish"> 发现</button>
                 </form>
             </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="background-color: white">
-                <h3>热门话题</h3>
-                1.问题标题：语言描述发布问题
-                2.问题补充：补充问题内容，确保直观清晰，提供相关资料
-                3.选择标签：选择一个或者多个合适标签，用逗号隔开，每个标签不超过10个字
-            </div>
-
-            <div class="media-body">
-                <h4 class="media-heading">怎么快速学会 Spring Boot 开发</h4>
-                点击进入看 我 录制的视频
-            </div>
-
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12"></div>
         </div>
-
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12"></div>
+            <h3>热门话题</h3>
+            1.问题标题：用简洁的语言描述发布问题，不超过25个字<br>
+            2.问题补充：详细补充问题内容，确保问题描述清晰直观，并提供一些相关的资料<br>
+            3.选择标签：选择一或多个合适标签，用逗号隔开，每个标签不超过10个字<br>
     </div>
-</nav>
+</div>
+
+</div>
 </body>
 </html>
